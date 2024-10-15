@@ -1,0 +1,57 @@
+/* src/styles/right-web-search-data.css */
+.web-search-data-item {
+    display: flex; /* 使用弹性布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: flex-start; /* 子元素左对齐 */
+    padding: 10px; /* 内边距10px */
+    border: 1px solid #ddd; /* 边框颜色为浅灰色 */
+    border-radius: 5px; /* 边框圆角半径5px */
+    margin-bottom: 10px; /* 底部外边距10px */
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease; !* 过渡效果，持续0.3秒，缓动效果 *!*/
+}
+
+.web-search-data-item:hover {
+    /*transform: translateY(-5px); !* 鼠标悬停时向上移动5px *!*/
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.3); /* 鼠标悬停时添加阴影 */
+}
+
+.web-search-data-item a {
+    color: white; /* 文字颜色为白色 */
+    width: 100%; /* 宽度100% */
+}
+
+.web-search-data-favicon {
+    width: 24px; /* 图标宽度24px */
+    height: 24px; /* 图标高度24px */
+    margin-bottom: 10px; /* 底部外边距10px */
+}
+
+.web-search-data-title {
+    font-weight: bold; /* 字体加粗 */
+    margin-bottom: 5px; /* 底部外边距5px */
+}
+
+.web-search-data-date {
+    font-size: 0.9em; /* 字体大小0.9em */
+    color: #666; /* 字体颜色为灰色 */
+    margin-bottom: 10px; /* 底部外边距10px */
+}
+
+.web-search-data-body {
+    font-size: 0.95em; /* 字体大小0.95em */
+    color: #333; /* 字体颜色为深灰色 */
+    margin-bottom: 10px; /* 底部外边距10px */
+}
+
+.web-search-data-button {
+    padding: 5px 10px; /* 内边距5px 10px */
+    background-color: #66b2ff; /* 背景颜色为浅蓝色 */
+    color: white; /* 文字颜色为白色 */
+    text-align: center; /* 文字居中 */
+    border-radius: 3px; /* 边框圆角半径3px */
+    text-decoration: none; /* 去掉文本装饰 */
+}
+
+.web-search-data-button:hover {
+    color: white; /* 鼠标悬停时文字颜色保持白色 */
+}

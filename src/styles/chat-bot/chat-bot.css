@@ -1,0 +1,5 @@
+/* App.css */
+.app-container {
+    display: flex; /* 设置为弹性布局 */
+    height: 100vh; /* 高度设置为视口高度 */
+}

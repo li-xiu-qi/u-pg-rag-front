@@ -1,0 +1,23 @@
+/* src/styles/right-sidebar-file.css */
+.right-sidebar-file {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.right-sidebar-file h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.right-sidebar-file a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.right-sidebar-file a:hover {
+    text-decoration: underline;
+}

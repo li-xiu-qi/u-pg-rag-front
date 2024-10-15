@@ -1,0 +1,125 @@
+/* src/styles/login/login.css */
+.login-backgroundImage {
+    background-color: #f0f2f5;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.login-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.login-blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.login-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.login-card {
+    position: relative;
+    box-shadow: 10px 4px 6px -2px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);
+    width: 700px;
+    min-height: 400px; /* 调整最小高度 */
+    z-index: 3;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 垂直居中 */
+}
+
+.login-card-title-word {
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.2;
+    font-size: 20px;
+    background-color: #5271FF;
+    padding: 20px;
+    border-radius: 40px 40px 0 0;
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px; /* 增加顶部外边距，避免与标题重叠 */
+}
+
+.login-form-item {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-input-style {
+    width: 100%; /* 调整宽度以适应父容器 */
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #d9d9d9;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.login-button-style {
+    width: 100%; /* 调整宽度以适应父容器 */
+    height: 45px;
+    border-radius: 20px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-link-button {
+    background: none;
+    border: none;
+    color: #1890ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-button-container {
+    margin-top: 20px;
+}
+
+.login-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+/* right-image-resource-group.css */
+.right-sidebar-image-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* 间隙大小 */
+}
+
+.right-sidebar-image-row {
+    display: flex;
+    width: 100%;
+}
+
+.right-sidebar-image-display {
+    flex: 1 1 calc(50% - 16px); /* 两列布局，带间隙 */
+    box-sizing: border-box;
+}
+
+.right-sidebar-image-display-img {
+    width: 100%;
+    height: 100px; /* 图片高度 */
+    object-fit: cover;
+}
+
+.right-sidebar-image-hidden {
+    display: none;
+}

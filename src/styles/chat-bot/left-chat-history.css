@@ -1,0 +1,58 @@
+@keyframes slideUp {
+    from {
+        transform: translateY(20px); /* 从Y轴向下20px的位置开始 */
+        opacity: 0; /* 从完全透明开始 */
+    }
+    to {
+        transform: translateY(0); /* 移动到Y轴的原始位置 */
+        opacity: 1; /* 变为完全不透明 */
+    }
+}
+
+.left-sidebar-chat-history-container {
+    position: relative; /* 相对定位 */
+    padding: 10px; /* 内边距为10px */
+    width: 100%; /* 宽度为100% */
+    max-width: 175px; /* 最大宽度为175px */
+    border: 1px solid #ccc; /* 添加1px的灰色边框 */
+    border-radius: 5px; /* 可选：添加5px的圆角 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    }
+
+.left-sidebar-close-chat-history-button {
+    position: absolute; /* 绝对定位 */
+    top: 5px; /* 距离顶部5px */
+    right: 5px; /* 距离右侧5px */
+    border: 1px solid #ccc; /* 添加1px的灰色边框 */
+    border-radius: 50%; /* 添加50%的圆角 */
+    cursor: pointer; /* 鼠���指针变为手型 */
+    font-size: 16px; /* 字体大小为16px */
+    background-color: #ccc; /* 文本颜色为黑色 */
+    color: #fff; /* 背景颜色为灰色 */
+}
+
+.left-sidebar-chat-history-list {
+    display: flex; /* 使用弹性布局 */
+    flex-direction: column; /* 垂直排列子元素 */
+    margin-top: 25px; /* 顶部外边距为20px */
+
+}
+
+.left-sidebar-chat-history-item {
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 6px; /* 底部外边距为10px */
+    animation: slideUp 0.3s ease-in-out; /* 应用slideUp动画，持续0.3秒，缓入缓出效果 */
+}
+
+.left-sidebar-chat-record {
+    display: block; /* 块级元素 */
+    width: 100%; /* 宽度为100% */
+    padding: 10px; /* 内边距为10px */
+    border: 1px solid #ccc; /* 添加1px的灰色边框 */
+    border-radius: 5px; /* 添加5px的圆角 */
+    background-color: #f9f9f9; /* 背景颜色为浅灰色 */
+    text-align: left; /* 文本左对齐 */
+    cursor: pointer; /* 鼠标指针变为手型 */
+    margin-left: 0; /* 左侧外边距为0 */
+}

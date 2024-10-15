@@ -1,0 +1,40 @@
+.mode-toggle {
+    width: 40px;
+    height: 20px; 
+    border: 2px solid #007bff;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.mode-toggle-circle {
+    width: 16px;
+    height: 16px; 
+    background-color: #007bff; 
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.mode-toggle.web_search .mode-toggle-circle {
+    transform: translateX(0);
+}
+
+.mode-toggle.database_search .mode-toggle-circle {
+    transform: translateX(20px);
+}
+
+.mode-toggle:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+}

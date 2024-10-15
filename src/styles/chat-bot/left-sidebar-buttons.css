@@ -1,0 +1,63 @@
+.left-sidebar-button-container {
+    display: flex; /* 使用弹性布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    justify-content: flex-start; /* 子元素垂直方向从顶部开始排列 */
+    width: 100%; /* 宽度占满父容器 */
+    max-width: 100px; /* 最大宽度为100px */
+    height: 100vh; /* 高度占满整个视口高度 */
+    padding-top: 3vh; /* 顶部内边距为视口高度的12% */
+    margin-left: 12px; /* 左侧外边距12px */
+    margin-right: 10px; /* 右侧外边距10px */
+    box-sizing: border-box; /* 包括内边距和边框在内的总高度 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    transition: max-width 0.3s ease; /* 最大宽度变化时的过渡效果，持续0.3秒，缓动效果 */
+}
+
+.left-sidebar-button-container.collapsed {
+    max-width: 40px; /* 折叠状态下的最大宽度为40px */
+}
+
+.left-sidebar-circle-button {
+    width: 100%; /* 宽度占满父容器 */
+    height: 40px; /* 高度为40px */
+    border-radius: 20px; /* 圆角半径为20px，形成圆形按钮 */
+    margin: 10px; /* 外边距10px */
+    padding: 0 10px; /* 左右内边距10px */
+    background-color: #ccc; /* 背景颜色为浅灰色 */
+    border: none; /* 无边框 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 子元素水平居中 */
+    justify-content: flex-start; /* 子元素从左侧开始排列 */
+    font-size: 16px; /* 字体大小16px */
+    transition: background-color 0.3s ease; /* 背景颜色变化时的过渡效果，持续0.3秒，缓动效果 */
+}
+
+.left-sidebar-circle-button span {
+    margin-left: 10px; /* 左侧外边距10px */
+}
+
+.left-sidebar-circle-button:hover {
+    background-color: #bbb; /* 鼠标悬停时背景颜色变为稍深的灰色 */
+}
+
+.left-sidebar-collapse-button {
+    width: 40px; /* 宽度40px */
+    height: 40px; /* 高度40px */
+    border-radius: 50%; /* 圆角半径50%，形成圆形按钮 */
+    margin: 10px; /* 外边距10px */
+    padding: 0; /* 无内边距 */
+    background-color: #ccc; /* 背景颜色为浅灰色 */
+    border: none; /* 无边框 */
+    cursor: pointer; /* 鼠���悬停时显示为指针 */
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 子元素水平居中 */
+    justify-content: center; /* 子元素垂直居中 */
+    font-size: 16px; /* 字体大小16px */
+    transition: background-color 0.3s ease; /* 背景颜色变化时的过渡效果，持续0.3秒，缓动效�� */
+}
+
+.left-sidebar-collapse-button:hover {
+    background-color: #bbb; /* 鼠标悬停时背景颜色变为稍深的灰色 */
+}

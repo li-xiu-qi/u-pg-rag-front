@@ -1,0 +1,163 @@
+.middle-container {
+    flex: 1; /* 占据剩余空间 */
+    display: flex; /* 设置为弹性布局 */
+    flex-direction: column; /* 垂直方向排列 */
+}
+
+.middle-container-title {
+    text-align: center; /* 文本居中 */
+    padding: 10px; /* 内边距设置为10像素 */
+    font-size: 24px; /* 字体大小设置为24像素 */
+    margin-bottom: 20px; /* 底部外边距设置为20像素 */
+}
+
+.middle-container-chat-record-container {
+    flex: 1; /* 占据剩余空间 */
+    overflow-y: auto; /* 垂直方向滚动 */
+    padding: 10px; /* 内边距设置为10像素 */
+    width: 99%; /* 宽度设置为100% */
+    margin: 0 auto; /* 水平居中 */
+}
+
+.middle-container-input-container {
+    display: flex; /* 设置为弹性布局 */
+    flex-direction: column; /* 垂直方向排列 */
+    padding: 10px; /* 内边距设置为10像素 */
+    max-width: 700px; /* 最大宽度设置为700像素 */
+    width: 100%; /* 宽度设置为100% */
+    margin: 0 auto; /* 水平居中 */
+    position: relative; /* 相对定位 */
+}
+
+.middle-container-input-wrap {
+    display: flex; /* 设置为弹性布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 水平分布 */
+    margin-top: 10px; /* 顶部外边距设置为10像素 */
+    border: 1px solid #ccc; /* 添加边框 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+    padding: 10px; /* 内边距设置为10像素 */
+    position: relative; /* 相对定位 */
+}
+
+.middle-container-text-editor {
+    resize: none; /* 禁止调整大小 */
+    height: 40px; /* 高度设置为40像素 */
+    padding: 10px; /* 内边距设置为10像素 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+    flex: 1; /* 占据剩余空间 */
+    margin-right: 10px; /* 右外边距设置为10像素 */
+}
+
+.middle-container-enter {
+    display: flex; /* 设置为弹性布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+.middle-container-send-button {
+    background-color: #007bff; /* 背景颜色设置为蓝色 */
+    color: white; /* 字体颜色设置为白色 */
+    border: none; /* 无边框 */
+    padding: 10px 20px; /* 内边距设置为10像素上下，20像素左右 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+}
+
+.middle-container-send-button.disabled {
+    background-color: gray; /* 背景颜色设置为灰色 */
+    cursor: not-allowed; /* 鼠标悬停时显示为禁止 */
+}
+
+.middle-container-footer-text {
+    text-align: center; /* 文本居中 */
+    color: gray; /* 字体颜色设置为灰色 */
+    font-size: 10px; /* 字体大小设置为10像素 */
+    margin-top: 10px; /* 顶部外边距设置为10像素 */
+}
+
+.middle-container-warning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: fadeInOut 2s forwards;
+    text-align: center;
+}
+
+.middle-container-new-chat-button {
+    background-color: gray; /* 背景颜色设置为灰色 */
+    color: white; /* 字体颜色设置为白色 */
+    border: none; /* 无边框 */
+    padding: 5px 10px; /* 内边距设置为5像素上下，10像素左右 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    font-size: 12px; /* 字体大小设置为12像素 */
+    align-self: flex-start; /* 自身左对齐 */
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    animation: buttonFadeIn 1s ease-in-out; /* 添加淡入动画 */
+}
+
+.middle-container-new-chat-button:hover {
+    background-color: #555; /* 鼠标悬停时背景颜色变为深灰色 */
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+}
+
+.middle-container-new-chat-button:active {
+    transform: scale(0.95); /* 鼠标按下时缩小 */
+}
+
+.middle-container-mode-toggle {
+    position: absolute;
+    left: 10px; /* 左边距设置为10像素 */
+    bottom: 10px; /* 底部边距设置为10像素 */
+}
+
+.middle-container-mode-toggle button {
+    background-color: #007bff; /* 背景颜色设置为蓝色 */
+    color: white; /* 字体颜色设置为白色 */
+    border: none; /* 无边框 */
+    padding: 5px 10px; /* 内边距设置为5像素上下，10像素左右 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    font-size: 12px; /* 字体大小设置为12像素 */
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+}
+
+.middle-container-mode-toggle button:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景颜色变为深蓝色 */
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+}
+
+.middle-container-mode-toggle button:active {
+    transform: scale(0.95); /* 鼠标按下时缩小 */
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.middle-container-mode-toggle {
+    margin-top: 10px; /* Adjust as needed */
+    text-align: center; /* Center the button */
+}
+
+.middle-container-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.middle-container-enter {
+    margin-bottom: 10px; /* Adjust as needed */
+}
